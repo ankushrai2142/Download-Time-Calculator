@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(26, 26, 26);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container h1 {
+    font-size: 4rem;
+    white-space: nowrap;
+    color: white;
+}
+
+.form {
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(30, 75, 44, 0.753);
+    border-radius: 20px;
+}
+
+.speed, .size {
+    padding: 0 0 15px 0;
+    white-space: nowrap;
+}
+
+input {
+    margin-right: 8px;
+}
+
+input, select {
+    font-size: 1.5rem;
+    padding: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+select {
+    width: 120px;
+    height: 68px;
+    color: black;
+    background-color: white;
+}
+
+button {
+    color: black;
+    align-self: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    transition: 0.1s;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(122, 122, 122);
+}
+
+.result {
+    transition: 0.5s;
+    display: none;
+    background-color: rgba(30, 75, 44, 0.753);
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+@media screen and (max-width: 870px) {
+    .container h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 680px) {
+    .container h1{
+        font-size: 2rem;
+    }
+    .form, .result {
+        width: 300px;
+        font-size: 1.2rem;
+    }
+
+    input, select {
+        font-size: 1rem;
+        padding: 15px;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+    }
+
+    select {
+        width: 100px;
+        height: 50px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .container h1{
+        font-size: 1.5rem;
+    }
+
+    .form, .result {
+        width: 200px;
+        padding: 30px;
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    input, select {
+        width: 60px;
+        padding: 12px;    
+    }
+
+    select {
+        width: 80px;
+        font-size: 0.7rem;
+        height: 44px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
